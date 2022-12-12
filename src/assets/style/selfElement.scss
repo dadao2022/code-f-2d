@@ -1,0 +1,115 @@
+.select-class {
+    .el-input__inner {
+        background-color: rgba($color: #000000, $alpha: 0);
+        // 背景色渐变
+        background-image: linear-gradient(
+            to bottom,
+            rgba($color: #074576, $alpha: 0.5),
+            rgba($color: #0c2643, $alpha: 0.5)
+        );
+        color: #fff;
+        border: none;
+        box-shadow: 0px 20px 50px inset rgba($color: #009fff, $alpha: 0.2),
+            0px 0px 10px rgba($color: #4dd2ff, $alpha: 0.5);
+    }
+}
+
+.el-select-dropdown {
+    background-color: rgba($color: #000000, $alpha: 0) !important;
+    // 背景色渐变
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color: #074576, $alpha: 0.5),
+        rgba($color: #0c2643, $alpha: 0.5)
+    );
+    border: none !important;
+    color: #fff;
+}
+
+.popper__arrow::after {
+    border-bottom-color: rgba($color: #074576, $alpha: 0.5) !important;
+}
+
+.popper__arrow {
+    border-bottom-color: rgba($color: #074576, $alpha: 0.5) !important;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+    color: #fff;
+    background-color: rgba($color: #074576, $alpha: 0.5) !important;
+}
+
+.el-select-dropdown__item {
+    color: #fff !important;
+}
+
+.el-table,
+.el-table th.el-table__cell,
+.el-table thead,
+.el-table tr,
+.el-table__empty-text,
+.el-table td.el-table__cell,
+.el-table th.el-table__cell.is-leaf {
+    color: #fff !important;
+    background-color: rgba($color: #000000, $alpha: 0) !important;
+    border: none !important;
+}
+
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+    height: 0 !important;
+}
+
+.el-table {
+    /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background-color: none;
+    }
+    /*定义滚动条轨道 内阴影+圆角*/
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: none;
+    }
+    /*定义滑块 内阴影+圆角*/
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgb(0, 197, 255);
+    }
+}
+
+// input/时间/输入
+.el-input__inner,
+.el-picker-panel {
+    background-color: #054071 !important;
+    border: 1px solid #00bfff !important;
+    color: #fff !important;
+}
+
+.el-picker-panel__icon-btn,
+.el-date-table th,
+.el-date-picker__header-label,
+.el-year-table td .cell,
+.el-month-table td .cell {
+    color: #fff !important;
+}
+
+.el-picker-panel__footer {
+    background-color: #054071 !important;
+}
+
+.el-button + .el-button,
+.el-checkbox.is-bordered + .el-checkbox.is-bordered,
+.el-self-button {
+    background-color: #054071 !important;
+    border: 1px solid #00bfff !important;
+    color: #fff !important;
+}
+
+.el-date-table td.current:not(.disabled) span {
+    background-color: #fff !important;
+    color: #000 !important;
+}

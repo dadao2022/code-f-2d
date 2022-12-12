@@ -1,0 +1,369 @@
+.sq-header{
+  background: url('@/assets/images/1920/head_bg.png') no-repeat center center;
+  height: 147px;width: 100%;
+  min-width: 1920px;
+  position: absolute;
+  top: -45px;z-index: 9;
+  .title{
+    font-size: 32px;
+    letter-spacing: 2px;
+    height: 57px;
+    width: 657px;
+  }
+  .menu{
+    height: 57px;
+    justify-content: space-between;
+  }
+  .nav-button{
+    font-size: 18px;
+    padding: 0 10px;
+    margin: 0 20px;
+    .nav-button-text{
+      font-size: 20px;
+    }
+    &::before{
+      top: calc(50% - 6px);
+      left: -2px;
+      width: 12px;
+      height: 12px;
+    }
+    &::after{
+      top: calc(50% - 6px);
+      right: -2px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .nav-right-icon-time{
+    font-size: 20px;
+    .time-class {
+      font-size: 12px;
+      .content{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.pad30{
+  padding: 0 30px 0 30px;
+}
+
+.dd-table{
+  width: 100%;
+  th{
+    background: #0D577F;color: #C4C4C4;font-size: 16px;
+    text-align: center;vertical-align: middle;
+    height: 36px;
+  }
+  td{
+    height: 36px;color: #C4C4C4;font-size: 16px;text-align: center;vertical-align: middle;
+    cursor: pointer;
+  }
+  tr:nth-child(even) td{
+    background: rgba(255, 255, 255, 0.08);
+  }
+  tr:hover td{
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .green{
+    color: #009966;
+  }
+  .red{
+    color: #f00;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.dd-select{
+  background: linear-gradient(#0e4d74, #173140);
+  height: 30px;border-radius: 10px;outline: none;
+  padding: 0 15px 0 10px;color: #fff;font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  border:none;position: relative;
+  option{
+    background: #0D577F;
+    color: #fff;
+    font-size: 16px;
+  }
+  &.shadow{
+    box-shadow: 0 0 10px #0ff;
+  }
+  
+}
+.dd-select:after {
+  content:"▼";    
+  padding: 6px 8px;
+  position: absolute; right: 10px; top: 0;    
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;      
+  pointer-events: none;
+  box-sizing: border-box;
+  color: #0ff;  
+}
+
+.app-container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;top: 0;
+  overflow: hidden;
+  .left-container{
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 500px;
+    height: calc(100% - 120px);
+    z-index: 10;
+  }
+  .mid-info-container{
+    position: absolute;
+    top: 90px;
+    left: 620px;height: calc(100% - 140px);
+    width: calc(100% - 1240px);
+    transition: all 1s;
+
+    &.full{
+      left: 20px;
+      width: calc(100% - 50px);
+    }
+  }
+  .right-container{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 500px;
+    height: calc(100% - 120px);
+    z-index: 10;
+  }
+  .sep{
+    margin: 4% 0 0 0;
+  }
+  .bottom-container{
+    position: absolute;
+    width: 100%;
+    left: 0;bottom: 0;
+    height: 3%;
+    z-index: 10;
+  }
+}
+
+.card-class{
+  .header-title {
+    width: 100%;
+    padding: 5px 0 0 0;
+    .text-class{
+      width: 235px;
+      height: 27px;
+      background: url("@/assets/images/1920/title.png") no-repeat 0 bottom;
+      font-size: 18px;
+      .content{
+        font-size: 18px;
+      }
+      img{
+        height: 70%;
+        margin: 0 5px 0 0;
+      }
+    }
+  }
+}
+
+.pabel-container{
+  padding: 0 10px 10px 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 9px 0 0 0;
+}
+
+@media screen and (min-width: 2560px) {
+  .sq-header{
+    background: url('@/assets/images/2560/head_bg.png') no-repeat center center;
+    height: 147px;width: 100%;
+    min-width: 1920px;
+    position: absolute;
+    top: -30px;
+    .title{
+      font-size: 38px;
+      letter-spacing: 5px;
+      height: 90px;
+      width: 657px;
+    }
+    .menu{
+      height: 75px;
+      position: relative;top: -5px;
+      &.rg{
+        .nav-button{
+          margin: 0 30px !important;
+        }
+      }
+    }
+    .nav-button{
+      font-size: 20px;
+      padding: 0 10px;
+      margin: 0 30px;
+      .nav-button-text{
+        font-size: 20px;
+      }
+      &::before{
+        top: calc(50% - 8px);
+        left: -8px;
+        width: 16px;
+        height: 16px;
+      }
+      &::after{
+        top: calc(50% - 8px);
+        right: -8px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .nav-right-icon-time{
+      font-size: 28px;
+      .time-class {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .card-class{
+    .header-title {
+      padding: 10px 0 0 0;
+      .text-class{
+        width: 291px;
+        height: 32px;
+        background: url("@/assets/images/2560/title.png") no-repeat 0 bottom;
+        font-size: 20px;
+        .content{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .app-container{
+    .left-container{
+      position: absolute;
+      top: 90px;
+      left: 20px;
+      width: 660px;
+      height: calc(100% - 130px);
+    }
+    .mid-info-container{
+      position: absolute;
+      top: 90px;
+      left: 700px;
+    }
+    .right-container{
+      top: 90px;
+      right: 20px;
+      width: 660px;
+      height: calc(100% - 130px);
+    }
+    .sep{
+      margin: 3% 0 0 0;
+    }
+    .bottom-container{
+      left: 0;bottom: 0;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  .sq-header{
+    background: url('@/assets/images/3840/head_bg.png') no-repeat center center;
+    height: 147px;width: 100%;
+    min-width: 1920px;
+    position: absolute;
+    top: -6px;
+    .title{
+      font-size: 50px;
+      letter-spacing: 5px;
+      height: 120px;
+      width: 850px;
+      position: relative;
+      top: -15px;
+      left: 16px;
+    }
+    .menu{
+      height: 95px;
+      position: relative;top: -16px;
+      &.rg{
+        .nav-button{
+          margin: 0 60px !important;
+        }
+      }
+    }
+    .nav-button{
+      font-size: 34px;
+      padding: 0 16px;
+      margin: 0 60px;
+      .nav-button-text{
+        font-size: 34px;
+      }
+      &::before{
+        top: calc(50% - 11px);
+        left: -11px;
+        width: 22px;
+        height: 22px;
+      }
+      &::after{
+        top: calc(50% - 11px);
+        right: -11px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+    .nav-right-icon-time{
+      font-size: 36px;
+      .time-class {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .card-class{
+    .header-title {
+      padding: 10px 0 0 0;
+      .text-class{
+        width: 391px;
+        height: 49px;
+        background: url("@/assets/images/3840/title.png") no-repeat 0 bottom;
+        font-size: 30px;
+        .content{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .app-container{
+    .left-container{
+      position: absolute;
+      top: 130px;
+      left: 30px;
+      width: 1000px;
+      height: calc(100% - 180px);
+    }
+    .right-container{
+      top: 130px;
+      right: 30px;
+      width: 1000px;
+      height: calc(100% - 180px);
+    }
+    .sep{
+      margin: 3% 0 0 0;
+    }
+    .bottom-container{
+      left: 0;bottom: 0;
+      height: 50px;
+    }
+  }
+}

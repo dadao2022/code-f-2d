@@ -2,30 +2,22 @@ import request from '@/utils/request'
 
 export function login(data) {
   return request({
-    url: '/cms/api/login',
+    url: '/auth/login',
     method: 'post',
-    params: data
+    data
   })
 }
 
-export function getInfo(params) {
+export function getInfo() {
   return request({
-    url: '/cms/api/userinfo',
-    method: 'get',
-    params: params
-  })
-}
-
-export function logout() {
-  return request({
-    url: '/user/logout',
+    url: '/system/user/getInfo',
     method: 'get'
   })
 }
 
-export function GetMyLinks() {
+export function getMenus() {
   return request({
-    url: '/cms/api/userLinks',
+    url: '/system/menu/getRouters',
     method: 'get'
   })
 }

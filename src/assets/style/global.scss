@@ -1,0 +1,161 @@
+@import "font.scss";
+// 科技风定制element-ui样式
+@import "selfElement.scss";
+@import "layout.scss";
+@import "animate.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #070e3d;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.setbutton {
+    font-size: 26px;
+}
+
+.card-body{
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-picker{
+  .el-input__icon{
+    width: 17px;line-height: 22px !important;
+  }
+  .el-picker-panel{
+    position: absolute;
+    z-index: 99;
+  }
+  &.el-input--mini .el-input__inner{
+    padding: 0 0 0 23px !important;
+    height: 22px;line-height: 22px;
+  }
+}
+.el-date-table td.in-range div{
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+.el-date-editor--daterange.el-input__inner{
+  width: 250px;
+}
+.el-range-editor--mini .el-range-separator{
+  color: #fff !important;
+}
+
+.inp-text{
+  width: 150px;border-radius: 5px;padding: 0 0 0 5px;
+  height: 23px;border: solid 1px #00BFFF;
+  background: #004884;color: #fff;
+}
+
+.build-btn{
+  width: 90px;height: 90px;
+  background: url('@/assets/images/public/buildbtn/btn.png') no-repeat 0 0;
+  background-size: 100% 100%;
+  cursor: pointer;display: flex;
+  justify-content: center;align-items: center;
+  font-size: 20px;font-family: 'HY';
+  span{
+    background-image: linear-gradient(to bottom, #FFFFFF, #8FFFFF);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  &.sel{
+    background: url('@/assets/images/public/buildbtn/sel.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    span{
+      background-image: linear-gradient(to bottom, #FFFFFF, #FFD24D);
+    }
+  }
+}
+
+.nor-button{
+  padding: 4px 15px;
+  background: linear-gradient(to bottom, #014B7D, #013154);
+  border-radius: 8px;
+  box-shadow: 0 0 10px #4DD2FF;
+  width: auto;
+  display: inline-block;
+  cursor: pointer;
+  span{
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #FFFFFF, #8FFFFF);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+}
+
+.close-icon-folder{
+  position: absolute;
+  font-size: 24px;
+  color: #0087d8;
+  cursor: pointer;
+  z-index: 10;left: 20px;top: -5px;
+}
+
+@media screen and (min-width: 2560px) {
+  .date-picker{
+    .el-input__icon{
+      width: 22px;line-height: 30px !important;
+    }
+    &.el-input--mini .el-input__inner{
+      padding: 0 0 0 22px !important;
+      height: 30px;line-height: 30px;
+      font-size: 14px;
+    }
+  }
+
+  .build-btn{
+    width: 140px;height: 140px;
+    span{
+      font-size: 30px;
+    }
+  }
+}
+@media screen and (min-width: 3840px) {
+  .date-picker{
+    .el-input__icon{
+      width: 25px;line-height: 35px !important;
+    }
+    &.el-input--mini .el-input__inner{
+      padding: 0 0 0 30px !important;
+      height: 35px;line-height: 35px;
+      font-size: 16px;
+    }
+  }
+
+  .build-btn{
+    width: 140px;height: 140px;
+    span{
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 2560px) {
+    .setbutton {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .setbutton {
+        font-size: 14px;
+    }
+}
+
